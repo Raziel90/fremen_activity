@@ -56,3 +56,14 @@ Since one of the datasets used is based on the [CASAS](http://ailab.wsu.edu/casa
 1. C.Coppola, T.Krajnik, T.Duckett, N.Bellotto: <b>[](http://raw.githubusercontent.com/wiki/gestom/fremen/papers/fremen_2016_ECAI.pdf)</b> In proceedings of the European Conference on Artificial Intelligence  (ECAI), 2016. [[bibtex](http://raw.githubusercontent.com/wiki/gestom/fremen/papers/fremen_2016_ECAI.bib)]
 1. T.Krajnik, J.P.Fentanes, G.Cielniak, C.Dondrup, T.Duckett: <b>[Spectral Analysis for Long-Term Robotic Mapping.](http://raw.githubusercontent.com/wiki/gestom/fremen/papers/fremen_2014_ICRA.pdf)</b> In proceedings of the IEEE International Conference on Robotics and Automation (ICRA), 2014. [[bibtex](http://raw.githubusercontent.com/wiki/gestom/fremen/papers/fremen_2014_ICRA.bib)]
 1. D.J. Cook: <b>[Learning setting-generalized activity models for smart spaces.](http://eecs.wsu.edu/~cook/pubs/is10.pdf)</b> IEEE Intelligent Systems, 2012. [[bibtex](http://dblp.uni-trier.de/rec/bibtex/journals/expert/Cook12)]
+
+
+ISSUES:
+- The eval scripts don't work showing the following message:
+      "./summarize_results.sh: line 15: ./t-test: No such file or directory"
+    solution: you might have forgottent to make the t-test executable. go in the eval_scripts folder and cal "make"
+- ./draw_results.sh prints the following message:
+      "draw_summary.gnu", line 49: warning: Warning - difficulty fitting plot titles into key
+      "draw_summary.gnu", line 49: warning: Warning - difficulty fitting plot titles into key
+      "draw_summary.gnu", line 49: warning: Warning - difficulty fitting plot titles into key
+    solution: it's perfectly normal, it depends from gnuplot when it prints the legend of the plot alone without the graphs.
